@@ -2,9 +2,11 @@
   "name": "mimi",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ts",
+  "main": "./prod/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./prod/index.js",
+    "build": "tsc",
+    "dev": "nodemon index.ts --inspect"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/r0705835/mimi#readme",
   "dependencies": {
-    "nodemon": "^2.0.15"
+    "nodemon": "^2.0.15",
+    "ts-node": "^10.4.0"
   }
 }
