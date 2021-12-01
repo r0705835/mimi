@@ -6,6 +6,6 @@ export const ping: CommandInt = {
         .setName("ping")
         .setDescription("Sends pong back!"),
     run: async (interaction) => {
-        console.log("Not implemented yet!");
+        interaction.reply("Pong!");
     }
 }
