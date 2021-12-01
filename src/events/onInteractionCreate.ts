@@ -1,6 +1,7 @@
 import { Interaction } from "discord.js";
 import { CommandList } from "../commands/_CommandList";
 
+
 export const onInteractionCreate = async (interaction: Interaction) => {
     if (!interaction.isCommand()) return;
 
@@ -11,5 +12,4 @@ export const onInteractionCreate = async (interaction: Interaction) => {
         console.error(error);
         return interaction.reply({ content: 'There was an error while executing this command!', ephemeral: true });
     }
-
 }
