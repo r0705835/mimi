@@ -1,5 +1,5 @@
 import { SlashCommandBuilder } from "@discordjs/builders";
-import { TextChannel } from "discord.js";
+import { GuildMember, TextChannel } from "discord.js";
 import { CommandInt } from "../interfaces/CommandInt";
 
 
@@ -15,7 +15,10 @@ export const whitelist: CommandInt = {
         try {
             const consoleChannel = await interaction.guild?.channels.fetch("910160166236880926")!;
             (consoleChannel as TextChannel).send("whitelist add " + interaction.options.getString("username"));
-            interaction.reply({
+
+            await (interaction.member as GuildMember).setNickname(interaction.options.getString("username"));
+
+            await interaction.reply({
                 content: "You have successfully been whitelisted to the minecraft server, enjoy your stay!",
                 ephemeral: true
             })
