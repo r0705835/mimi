@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node ./prod/index.js",
     "build": "tsc",
-    "dev": "nodemon index.ts --inspect"
+    "dev": "nodemon index.ts"
   },
   "repository": {
     "type": "git",

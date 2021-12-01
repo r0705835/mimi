@@ -6,8 +6,8 @@ npm-debug.log*
 # Dependency directories
 node_modules/
 
-# dotenv environment variables file
-.env
+# environment variables
+config.json
 
 # build version of application
 prod/
