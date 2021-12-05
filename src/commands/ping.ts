@@ -7,6 +7,9 @@ export const ping: CommandInt = {
         .setName("ping")
         .setDescription("Sends pong back!"),
     run: async (interaction) => {
-        interaction.reply("Pong!");
+        interaction.reply({
+            content: "Pong!",
+            ephemeral: true
+        });
     }
 }
