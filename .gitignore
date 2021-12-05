@@ -8,6 +8,7 @@ node_modules/
 
 # environment variables
 config.json
+.env
 
 # build version of application
 prod/
