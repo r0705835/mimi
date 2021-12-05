@@ -19,9 +19,6 @@
   },
   "homepage": "https://github.com/r0705835/mimi#readme",
   "dependencies": {
-    "@discordjs/builders": "^0.8.2",
-    "@discordjs/rest": "^0.1.0-canary.0",
-    "discord-api-types": "^0.25.2",
     "discord.js": "^13.3.1",
     "dotenv": "^10.0.0",
     "glob": "^7.2.0",
