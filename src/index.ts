@@ -1,4 +1,4 @@
-import ExtendedClient from "./structures";
+import ExtendedClient from "./structures/Client";
 require("dotenv").config();
 
 
