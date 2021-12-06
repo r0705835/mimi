@@ -1,8 +1,8 @@
 import { REST } from "@discordjs/rest";
 import { Routes } from "discord-api-types/v9";
-import { ExtendedClient } from "../structures/Client";
+import { client } from "..";
 
-export const onceReady = async (client: ExtendedClient) => {
+export const onceReady = async () => {
     console.log("Connected to Discord!");
 
     const commands = client.commands.map(command => command.data.toJSON());
