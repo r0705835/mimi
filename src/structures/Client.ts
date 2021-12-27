@@ -28,7 +28,7 @@ export class ExtendedClient extends Client {
     }
 
     async registerEvents() {
-        this.once("ready", async () => onceReady());
-        this.on("interactionCreate", async interaction => onInteractionCreate(interaction));
+        this.once("ready", async () => onceReady(this));
+        this.on("interactionCreate", async interaction => onInteractionCreate(this, interaction));
     }
 }

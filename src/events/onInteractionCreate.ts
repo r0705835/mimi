@@ -1,7 +1,7 @@
 import { Interaction } from "discord.js";
-import { client } from "..";
+import { ExtendedClient } from "../structures/Client";
 
-export const onInteractionCreate = async (interaction: Interaction) => {
+export const onInteractionCreate = async (client: ExtendedClient, interaction: Interaction) => {
     if (!interaction.isCommand()) return;
 
     try {
